@@ -20,3 +20,8 @@ rejectedExecutionHandler：线程池对拒绝任务（无线程可用）的处�
 
 setWaitForTasksToCompleteOnShutdown:表明等待所有线程执行完，默认为false。
 setAwaitTerminationSeconds:等待的时间，因为不能无限的等待下去。
+
+#业务
+异步方式在系统中有很多的应用，比如说，一个业务完成了核心的操作之后，一些附加的操作，可以采用异步方式去实现，
+这样可以使接口方法更快的返回。这里是要区分开那些是核心业务，哪些是附加业务，在保证核心执行的情况下，
+异步去调用附加业务。
